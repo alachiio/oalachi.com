@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+body.is-nav-open {
+    @apply before:content-[''] before:fixed before:w-screen before:h-screen before:bg-slate-900 before:bg-opacity-60 before:z-40;
+}
+
+.personal-photo {
+    @apply relative;
+}
+
+.personal-photo img {
+    @apply relative z-20;
+    /* border-radius: 76% 24% 37% 63% / 66% 45% 55% 34%; */
+}
+
+.personal-photo .shape {
+    @apply w-full overflow-visible stroke-slate-200 stroke-[5px] absolute top-0;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
